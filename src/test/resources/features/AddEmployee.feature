@@ -7,7 +7,7 @@ Feature: Add Employee
     When user clicks on PIM option
     And user clicks on Add Employee button
 
-  @sprint3 @regression
+  @sprint33 @regression
   Scenario: Adding one employee
     And user enter firstname and lastname
     And user clicks on save button
@@ -43,4 +43,12 @@ Feature: Add Employee
         @excel
         Scenario: Adding multiple employees using excel file
           When user adds multiple employees from excel using "EmployeeData" and verify it
+
+          @db
+          Scenario: Adding employee and verifying it is stored in database
+            And user enter "Mansoor" and "Raufi"
+            And user captures employee id
+            And user clicks on save button
+            And added employee is displayed in database
+
 

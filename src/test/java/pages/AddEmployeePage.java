@@ -1,5 +1,6 @@
 package pages;
 
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -45,6 +46,7 @@ public class AddEmployeePage extends CommonMethods {
         //if someone ask this to you in the interview you have to write the same thing
         PageFactory.initElements(driver,this);
     }
+
 
 
 }

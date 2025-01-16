@@ -41,4 +41,7 @@ Feature: Login functionality
       |          |Hum@nhrm123|Username cannot be empty|
       |admin     |           |Password cannot be empty|
 
+    @fb
+    Scenario: User launches Google web app
+      Given user launches goole successfully
 

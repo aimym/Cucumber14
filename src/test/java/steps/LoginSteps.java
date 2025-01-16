@@ -131,7 +131,12 @@ public class LoginSteps  extends CommonMethods {
     }
 
 
-
+    @Given("user launches goole successfully")
+    public void user_launches_goole_successfully() {
+        driver.get("https://www.facebook.com/");
     }
+
+
+}
 
 
